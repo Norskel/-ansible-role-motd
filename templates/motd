@@ -1,0 +1,7 @@
+{{ logo.content }}
+-----------------------------------------------------------------------------
+        Environement  : {{ environement }}       
+        Hostname      : {{ ansible_facts.fqdn }}
+        IP            : {{ ansible_default_ipv4.address }} 
+        OS            : {{ ansible_distribution }} {{ ansible_distribution_version }}
+-----------------------------------------------------------------------------

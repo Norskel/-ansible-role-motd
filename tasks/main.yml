@@ -1,0 +1,14 @@
+- name: Get ASCII Art Logo
+  ansible.builtin.uri:
+    url: "https://artii.herokuapp.com/make?text={{logotext}}&font=slant"
+    method: GET
+    return_content: yes
+  register: logo
+
+- name: Define banners
+  ansible.builtin.template:
+    src: "motd"
+    dest: "/etc/motd"
+    owner: root
+    group: root
+    mode: 0644
