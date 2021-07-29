@@ -1,8 +1,10 @@
+---
 galaxy_info:
   role_name: motd
   author: Norskel
   description: generate motd
   license: MIT License
   min_ansible_version: 2.9
-  galaxy_tags: []
+  galaxy_tags:
+    - motd
 dependencies: []
